@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coreinvader.ciar"
+    android:versionCode="15"
+    android:versionName="0.5.5" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <permission
+        android:name="com.coreinvader.ciar.permission.WRITE_MAPOBJECTS"
+        android:description="@string/permission_write"
+        android:label="@string/permission_write"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.coreinvader.ciar.permission.READ_MAPOBJECTS"
+        android:description="@string/permission_read"
+        android:label="@string/permission_read"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Yandex maps permissions -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/im_logo"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Ciar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MapObjectsActivity"
+            android:label="@string/title_objects"
+            android:theme="@style/Theme.Ciar" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_settings"
+            android:theme="@style/Theme.Ciar" />
+        <activity
+            android:name=".ui.MapObjectDetailsActivity"
+            android:label="@string/title_mapobjectdetails"
+            android:theme="@style/Theme.Ciar" />
+        <activity
+            android:name=".ui.ArActivity"
+            android:label="@string/title_ar"
+            android:theme="@style/Theme.Ciar" >
+<!--             android:screenOrientation="landscape" -->
+        </activity>
+<!--         <activity -->
+<!--             android:name="org.mixare.MixView" -->
+<!--             android:label="MixView" -->
+<!--             android:launchMode="singleTop" -->
+<!--             android:screenOrientation="landscape" > -->
+<!--             <intent-filter> -->
+<!--                 <action android:name="android.intent.action.VIEW" /> -->
+
+<!--                 <category android:name="android.intent.category.DEFAULT" /> -->
+<!--                 <category android:name="android.intent.category.BROWSABLE" /> -->
+
+<!--                 <data -->
+<!--                     android:mimeType="application/mixare-json" -->
+<!--                     android:scheme="http" /> -->
+<!--                 <data -->
+<!--                     android:mimeType="application/mixare-json" -->
+<!--                     android:scheme="content" /> -->
+<!--                 <data -->
+<!--                     android:mimeType="application/mixare-json" -->
+<!--                     android:scheme="file" /> -->
+<!--             </intent-filter> -->
+<!--         </activity> -->
+
+        <service android:name=".service.SyncService" />
+
+        <provider
+            android:name=".provider.CiarProvider"
+            android:authorities="com.coreinvader.ciar"
+            android:readPermission="com.coreinvader.ciar.permission.READ_MAPOBJECTS"
+            android:writePermission="com.coreinvader.ciar.permission.WRITE_MAPOBJECTS" />
+    </application>
+
+</manifest>

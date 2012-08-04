@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preview_aranchor_width">320px</dimen>
+    <dimen name="preview_aranchor_height">240px</dimen>
+    <dimen name="preview_width">576px</dimen>
+    <dimen name="preview_height">432px</dimen>
+</resources>

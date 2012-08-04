@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common -->
+    <string name="app_name">Ciar</string>
+    <string name="permission_write">Modify Ciar map objects data</string>
+    <string name="permission_read">Read Ciar map objects data</string>
+    <string name="toast_sync_error">Sync error: </string>
+    
+    <!-- Activity titles -->
+    <string name="title_objects">Objects</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_mapobjectdetails">MapObjectDetails</string>
+    <string name="title_ar">AugmentedReality</string>
+        
+    <string name="description_logo">Core Invader Augmented Reality</string>
+    
+    <string name="description_home">Home</string>  
+    <string name="description_refresh">Refresh</string>  
+    <string name="description_map">Map</string>
+    <string name="description_list">List</string>
+    <string name="description_camera">Camera</string>
+    <string name="description_share">Share</string>
+    
+    <string name="bt_home_objects">Objects</string>
+    <string name="bt_home_nearby">Nearby</string>
+    <string name="bt_home_categories">Categories</string>
+    <string name="bt_home_settings">Settings</string>
+    
+    <string name="bt_home_start">Start</string>
+    
+    <!-- Preferences -->
+    <string name="cat_geo">Location</string>
+    
+    <string name="autotarget_radius_key">AutoTargetRadius</string>
+	<string name="autotarget_radius_title">Search radius</string>
+	<string name="autotarget_radius_summary">Current search radius: %.1f (km)</string>
+	<string name="autotarget_radius_dialog_title">Enter search radius (km)</string>
+	
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+
+    <!-- Used in route preferences -->
+    <string-array name="location_methods">
+        <item>GPS</item>
+        <item>Network</item>
+    </string-array>
+    
+   
+    <string-array name="valueslocation_methods">
+        <item>gps</item>
+        <item>network</item>
+    </string-array>
+    
+    <string-array name="location_units">
+    	<item>Seconds</item>
+    	<item>Minutes</item>
+    </string-array>
+    
+    <string-array name="valueslocation_units">
+    	<item>1</item>
+    	<item>60</item>
+    </string-array>
+    
+    <string-array name="draw_name_options">
+    	<item>No names</item>
+    	<item>Central names</item>
+    	<item>All names</item>
+    </string-array>
+    
+    <string-array name="values_draw_name_options">
+    	<item>No_names</item>
+    	<item>Central_names</item>
+    	<item>All_names</item>
+    </string-array>
+    
+    <string-array name="height_options">
+    	<item>No heights</item>
+    	<item>Existing heights</item>
+    	<item>All heights</item>
+    </string-array>
+    
+    <string-array name="values_height_options">
+    	<item>No_heights</item>
+    	<item>Existing_heights</item>
+    	<item>All_heights</item>
+    </string-array>
+    
+    <string-array name="attaching_modes">
+    	<item>Note</item>
+    	<item>Photo</item>
+    	<item>Audio note</item>
+    	<item>QR code</item>
+    </string-array>
+    
+    <string-array name="azimuth_control">
+    	<item>Gyroscope</item>
+    	<item>Gaussian</item>
+    	<item>Proportional</item>
+    </string-array>
+    
+</resources>

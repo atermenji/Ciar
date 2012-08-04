@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="200dip"
+    android:paddingBottom="5dip">
+	
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal"
+		android:padding="5dip"
+	    android:background="@drawable/label_back_h">
+		<Button
+			android:id="@+id/ar_button_details"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dip"
+			android:layout_alignParentLeft="true"
+			android:visibility="invisible"
+			android:background="@drawable/bmagnif"
+		>
+		</Button>
+		<Gallery 
+			android:id="@+id/ar_static_gallery" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_toRightOf="@+id/ar_button_details"
+			android:layout_toLeftOf="@+id/ar_button_close"
+		/>
+		<Button
+			android:id="@+id/ar_button_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginBottom="5dip"
+			android:background="@drawable/bclose"
+		>
+		</Button>
+		<Button
+			android:id="@+id/ar_button_remove"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:visibility="invisible"
+			android:background="@drawable/bremove"
+		>
+		</Button>
+	</RelativeLayout>
+</LinearLayout>

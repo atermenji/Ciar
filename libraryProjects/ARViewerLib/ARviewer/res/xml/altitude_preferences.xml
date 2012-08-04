@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceCategory
+    	android:title="@string/pref_user_altitude_title">
+    	<CheckBoxPreference
+    		android:key="useGps"
+    		android:title="@string/pref_useGPS_title"
+    		android:summaryOn="@string/pref_useGPS_summary_on" 
+    		android:summaryOff="@string/pref_useGPS_summary_off" 
+    		android:defaultValue="false"/>
+    	<Preference
+    		android:key="userHeight"
+    		android:title="@string/pref_userHeight_title" 
+    		android:defaultValue="175"/>
+    	<CheckBoxPreference
+    		android:key="useFloor"
+    		android:title="@string/pref_useFloor_title"
+    		android:summaryOn="@string/pref_useFloor_summary_on" 
+    		android:summaryOff="@string/pref_useFloor_summary_off" 
+    		android:defaultValue="false"/>
+		<Preference
+    		android:key="floor"
+    		android:title="@string/pref_floor_title" 
+    		android:dependency="useFloor"
+    		android:defaultValue="0"/>
+	</PreferenceCategory>
+	
+</PreferenceScreen>

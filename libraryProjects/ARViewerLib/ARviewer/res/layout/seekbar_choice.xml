@@ -1,0 +1,27 @@
+<RelativeLayout 
+	
+	android:id="@+id/tag_container" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:paddingRight="5dip"
+	android:paddingTop="10dip"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+<SeekBar 
+	android:id="@+id/tag_bar" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:paddingLeft="10dip"
+	android:paddingTop="5dip"
+	android:layout_toLeftOf="@+id/tag_button">
+</SeekBar>
+<Button 
+	android:text="OK" 
+	android:id="@+id/tag_button"
+	android:layout_width="50dip" 
+	android:layout_height="50dip"
+	android:layout_marginLeft="10dip"
+	android:layout_alignParentRight="true"
+	android:background="@drawable/tagging_button">
+</Button>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="actionbar_compat_height">45dp</dimen>
+    
+    <!-- List items -->
+    <dimen name="list_item_mapobject_height">70dip</dimen>
+	<dimen name="list_item_mapobject_logo_size">55dip</dimen> 
+	<dimen name="list_item_mapobject_category_logo_size">20dip</dimen>     
+	
+	<dimen name="list_item_categories_category_height">65dip</dimen>
+	<dimen name="list_item_category_logo_size">50dip</dimen>     
+	
+	<dimen name="map_object_photo_height">75dip</dimen>
+
+	<dimen name="text_size_xxsmall">10sp</dimen>    
+    <dimen name="text_size_xsmall">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_xxlarge">24sp</dimen>
+
+</resources>

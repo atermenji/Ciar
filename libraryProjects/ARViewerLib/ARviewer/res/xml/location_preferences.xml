@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceCategory
+    	android:title="@string/pref_location_title">
+    	<ListPreference
+    		android:key="location_providers"
+    		android:title="@string/pref_location_provider_title" 
+    		android:summary="@string/pref_location_provider_summary"
+    		android:dialogTitle="@string/pref_location_title"
+    		android:entries="@array/location_methods"
+    		android:entryValues="@array/valueslocation_methods"
+    		android:defaultValue="network"/>
+    	<ListPreference
+    		android:key="location_unit"
+    		android:title="@string/pref_location_tunits_title" 
+    		android:summary="@string/pref_location_tunits_summary"
+    		android:dialogTitle="@string/pref_location_title"
+    		android:entries="@array/location_units"
+    		android:entryValues="@array/valueslocation_units"
+    		android:defaultValue="60"/>
+    	<Preference
+    		android:key="location_period"
+    		android:title="@string/pref_location_period_title" 
+    		android:summary="@string/pref_location_period_summary"
+    		android:defaultValue="2"/>
+    	<Preference
+    		android:key="location_distance"
+    		android:title="@string/pref_location_distance_title" 
+    		android:summary="@string/pref_location_distance_summary"
+    		android:defaultValue="10"/>
+	</PreferenceCategory>
+	
+</PreferenceScreen>
